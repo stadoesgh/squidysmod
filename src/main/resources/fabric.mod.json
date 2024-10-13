@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "squidysmod",
+	"version": "${version}",
+	"name": "squidys mod",
+	"description": "squidys dumbass mod",
+	"authors": [
+		"squidy"
+	],
+	"contact": {
+		"homepage": "https://scratch.mit.edu/users/squidytheawesome",
+		"sources": "https://github.com/stadoesgh/squidys-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/squidysmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"squidy.squidysmod.SquidysMod"
+		],
+		"fabric-datagen": [
+			"squidy.squidysmod.SquidysModDataGenerator"
+		],
+		"client": [
+			"squidy.squidysmod.SquidysModClient"
+		]
+	},
+	"mixins": [
+		"squidysmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.7",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
